@@ -4,17 +4,23 @@ layout: default
 
 <div class="home">
 
-	<h1 class="page-heading">{{ site.time | date_to_long_string }}</h1>
-
-	<ul>
-	{% for session in site.data.sessions %}
-	  <li>
-		 {{ session.name }}</br>
-		 {{ session.place }}</br>
-		 {{ session.date| date_to_long_string  }}</br>
-	  </li>
-	{% endfor %}
-	</ul>
+	<h1 class="page-heading">{{ site.time | date: "%A, %B %e, %Y" }}</h1>
 	
+	{% for session in site.data.sessions %}
+	  
+		{% capture todays_date %}{{ site.time | date: "%A, %B %e, %Y" }}{% endcapture %}
+		{% capture session_date %}{{session.date | date: "%A, %B %e, %Y" }}{% endcapture %}
+
+		{% if session_date == todays_date %}
+		<ul>
+			<li>
+			 {{ session.name }}</br>
+			 {{ session.place }}</br>
+			 {{ session.date }}</br>
+			</li>
+		</ul>
+		{% endif %}
+		
+	{% endfor %}
 
 </div>
