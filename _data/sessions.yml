@@ -1,24 +1,28 @@
 - speaker: 
   title: Refreshments
-  place: Reception
+  roomId: 1
+  room: Reception
   date: 2016-01-09 17:00
   duration: 17:00 - 17:45
 
 - speaker: Sandro Acuso
   title: Keynote
-  place: Sinclair Suite 1
+  roomId: 1
+  room: Sinclair Suite 1
   date: 2016-01-09 18:00
   duration: 18:00 - 19:00
 
 - speaker: Simon Yellow
   title: What is Agile?
-  place: Sinclair Suite 1
+  roomId: 1
+  room: Sinclair Suite 1
   date: 2016-01-09 19:00
   duration: 19:00 - 19:45
 
 - speaker: Pete Biff
   title: Learn to be a craftsman
-  place: Sinclair Suite 2
+  roomId: 2
+  room: Sinclair Suite 2
   date: 2016-01-09 19:00
   duration: 19:00 - 19:45
 

@@ -4,34 +4,91 @@ layout: default
 
 <div class="home">
 
+<div class="footer-col-wrapper">
+<!--get room one sessions -->
+{% assign counter=0 %}
 	{% for session in site.data.sessions %}
-	  
-		<!-- {% capture todays_date %}{{ site.time | date: "%Y-%m-%d" }}{% endcapture %}
-		{% capture current_time %}{{ site.time | date: "%H:%M" }}{% endcapture %} -->
+		{% if session.roomId == 1 %}  
 		
-		<!-- Setting below for debug purposes as time changes quicker than I code!! -->
-		{% capture todays_date %}{{ "2016-01-09" }}{% endcapture %}
-		{% capture current_time %}{{ "19:00" }}{% endcapture %}
-		
-		{% capture session_date %}{{session.date | date: "%Y-%m-%d" }}{% endcapture %}
-		{% capture session_time %}{{session.date | date: "%H:%M" }}{% endcapture %}
-
-
-		{% if session_date == todays_date and session_time >= current_time %}
+			<!-- {% capture todays_date %}{{ site.time | date: "%Y-%m-%d" }}{% endcapture %}
+			{% capture current_time %}{{ site.time | date: "%H:%M" }}{% endcapture %} -->
+			<!-- Setting below for debug purposes as time changes quicker than I code!! -->
+			{% capture todays_date %}{{ "2016-01-09" }}{% endcapture %}
+			{% capture current_time %}{{ "18:00" }}{% endcapture %}
 			
-		<div class="footer-col-wrapper">
-			<div class="footer-col footer-col-1">
-				<h2>UP NEXT</h2>
-				<h3> {{ session.place }}</h3>
-				<hr>
-				
-				<h4>{{ session.duration }}</h4>
-				<h5> {{session.title }}</h5>
-				<p>{{ session.speaker }}</p>
-			</div>
-		</div>
-		{% endif %}
-		
-	{% endfor %}
+			{% capture session_date %}{{session.date | date: "%Y-%m-%d" }}{% endcapture %}
+			{% capture session_time %}{{session.date | date: "%H:%M" }}{% endcapture %}
 
+				{% if session_date == todays_date and session_time >= current_time %}
+	
+					{% if counter < 1 %}	
+					
+					
+						<div class="footer-col">
+						<div class="col-1">
+							<h2>UP NEXT</h2>
+							<h3> {{ session.room }}</h3>
+							<hr>
+							
+							<h4>{{ session.duration }}</h4>
+							<h5> {{session.title }}</h5>
+							<p>{{ session.speaker }}</p>
+						</div>
+						</div>
+					
+						{% assign counter=counter | plus:1 %}   
+					{% endif %}	
+				{% endif %}
+			
+		{% endif %}
+	{% endfor %}
+	
+	{{my_variable}}
+	
+	
+	
+<!--get room two sessions -->
+{% assign counter2=0 %}
+	{% for session in site.data.sessions %}
+		{% if session.roomId == 2 %}  
+		
+			<!-- {% capture todays_date %}{{ site.time | date: "%Y-%m-%d" }}{% endcapture %}
+			{% capture current_time %}{{ site.time | date: "%H:%M" }}{% endcapture %} -->
+			<!-- Setting below for debug purposes as time changes quicker than I code!! -->
+			{% capture todays_date %}{{ "2016-01-09" }}{% endcapture %}
+			{% capture current_time %}{{ "18:00" }}{% endcapture %}
+			
+			{% capture session_date %}{{session.date | date: "%Y-%m-%d" }}{% endcapture %}
+			{% capture session_time %}{{session.date | date: "%H:%M" }}{% endcapture %}
+
+				{% if session_date == todays_date and session_time >= current_time %}
+	
+					{% if counter2 < 1 %}	
+					
+						<div class="footer-col">
+						<div class="col-2">
+							<h2>UP NEXT</h2>
+							<h3> {{ session.room }}</h3>
+							<hr>
+							
+							<h4>{{ session.duration }}</h4>
+							<h5> {{session.title }}</h5>
+							<p>{{ session.speaker }}</p>
+						</div>
+						</div>
+						{% assign counter2=counter2 | plus:1 %}   
+					{% endif %}	
+				{% endif %}
+			
+		{% endif %}
+	{% endfor %}
+	
+	{{my_variable}}
+	
+					</div>
+	
+	
+	
+	
+	
 </div>

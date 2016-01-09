@@ -122,6 +122,9 @@
 	color:#b2ac0a;
 }
 
+
+.footer-col { width:40%; padding-right:8%;} 
+
 .footer-col {
 	h2 {
 		color:#4991cc;
@@ -160,6 +163,16 @@
 		font-size: 16px;
 		font-family: 'Source Sans Pro', sans-serif;
 	}
+	
+	.col-2 h2 {
+		color:#293a40;
+	}
+	.col-2 h4	 {
+		color:#293a40;
+	}
+	.col-2 p	 {
+		color:#293a40;
+	}
 }
 
 
@@ -174,6 +187,8 @@ hr {
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+	margin-top:100px;
+	margin-bottom:200px;
 }
 
 .footer-col {
