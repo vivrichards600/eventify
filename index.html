@@ -4,21 +4,32 @@ layout: default
 
 <div class="home">
 
-	<h1 class="page-heading">{{ site.time | date: "%A, %B %e, %Y" }}</h1>
-	
 	{% for session in site.data.sessions %}
 	  
-		{% capture todays_date %}{{ site.time | date: "%A, %B %e, %Y" }}{% endcapture %}
-		{% capture session_date %}{{session.date | date: "%A, %B %e, %Y" }}{% endcapture %}
+		<!-- {% capture todays_date %}{{ site.time | date: "%Y-%m-%d" }}{% endcapture %}
+		{% capture current_time %}{{ site.time | date: "%H:%M" }}{% endcapture %} -->
+		
+		<!-- Setting below for debug purposes as time changes quicker than I code!! -->
+		{% capture todays_date %}{{ "2016-01-09" }}{% endcapture %}
+		{% capture current_time %}{{ "19:00" }}{% endcapture %}
+		
+		{% capture session_date %}{{session.date | date: "%Y-%m-%d" }}{% endcapture %}
+		{% capture session_time %}{{session.date | date: "%H:%M" }}{% endcapture %}
 
-		{% if session_date == todays_date %}
-		<ul>
-			<li>
-			 {{ session.name }}</br>
-			 {{ session.place }}</br>
-			 {{ session.date }}</br>
-			</li>
-		</ul>
+
+		{% if session_date == todays_date and session_time >= current_time %}
+			
+		<div class="footer-col-wrapper">
+			<div class="footer-col footer-col-1">
+				<h2>UP NEXT</h2>
+				<h3> {{ session.place }}</h3>
+				<hr>
+				
+				<h4>{{ session.duration }}</h4>
+				<h5> {{session.title }}</h5>
+				<p>{{ session.speaker }}</p>
+			</div>
+		</div>
 		{% endif %}
 		
 	{% endfor %}

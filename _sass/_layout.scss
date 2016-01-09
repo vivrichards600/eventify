@@ -1,6 +1,12 @@
 /**
  * Site header
  */
+ 
+ 
+ .logo img {
+	margin:70px 0px 50px -100px;
+ }
+ 
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
@@ -46,7 +52,6 @@
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
-        background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
@@ -100,17 +105,55 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+	background-color: #fff;
 }
 
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+	color:#b2ac0a;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
+.footer-col {
+	h2 {
+		color:#4991cc;
+		font-weight:bold;
+		font-size:20px;
+	}
+
+	h3 {
+		font-size:30px;
+		font-weight:bold;
+		color:#fff;
+		margin-top: -20px;
+	}
+
+	h4 {
+		color:#4991cc;
+		font-size:17px;
+		margin-bottom: 0px;
+	}
+	
+	h5 {
+		color:#fff;
+		font-size:17px;
+		font-weight:bold;
+		text-transform: capitalize;
+	}
+	
+	p {
+	    font-style: italic;
+		color: #7FA8D4;
+		margin-top: -15px;
+		font-size: 16px;
+	}
+}
+
+
+hr {
+	border: 1px dashed #a2c1e8;
+	margin-top:-15px;
+	margin-bottom:20px;
 }
 
 .footer-col-wrapper {
@@ -169,6 +212,9 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+	
+        background: url(../img/bg.png);
+		background-repeat: no-repeat;
 }
 
 .page-heading {
@@ -246,6 +292,10 @@
 /**
 * Sponsor section
 */
+
+.footer-heading {
+text-transform: uppercase;
+}
 
 .centered-text {
     text-align:center

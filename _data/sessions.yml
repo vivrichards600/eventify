@@ -1,19 +1,25 @@
-- name: Refreshments
-  place: Room One
-  date: 2016-09-01 
-  time: 9:00am
+- speaker: 
+  title: Refreshments
+  place: Reception
+  date: 2016-01-09 17:00
+  duration: 17:00 - 17:45
 
-- name: Keynote
-  place: Room One
-  date: 2016-01-09 
-  time: 10:00am
+- speaker: Sandro Acuso
+  title: Keynote
+  place: Sinclair Suite 1
+  date: 2016-01-09 18:00
+  duration: 18:00 - 19:00
+
+- speaker: Simon Yellow
+  title: What is Agile?
+  place: Sinclair Suite 1
+  date: 2016-01-09 19:00
+  duration: 19:00 - 19:45
+
+- speaker: Pete Biff
+  title: Learn to be a craftsman
+  place: Sinclair Suite 2
+  date: 2016-01-09 19:00
+  duration: 19:00 - 19:45
+
   
-- name: What is Agile?
-  place: Room One
-  date: 2009-09-12 
-  time: 11:00am
-
-- name: Learn to be a craftsman
-  place: Room Two
-  date: 2016-09-13 
-  time: 11:00am
