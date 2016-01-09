@@ -1,0 +1,15 @@
+- name: Refreshments
+  place: Room One
+  date: 2016-09-12 9:00am
+
+- name: Keynote
+  place: Room One
+  date: 2016-09-12 10:00am
+  
+- name: What is Agile?
+  place: Room One
+  date: 2016-09-12 11:00am
+
+- name: Learn to be a craftsman
+  place: Room Two
+  date: 2016-09-12 11:00am
