@@ -129,12 +129,12 @@
 	h2 {
 		color:#4991cc;
 		font-weight:bold;
-		font-size:20px;
+		font-size:2em;
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 
 	h3 {
-		font-size:30px;
+		font-size:3em;
 		font-weight:bold;
 		color:#fff;
 		margin-top: -20px;
@@ -143,14 +143,14 @@
 
 	h4 {
 		color:#4991cc;
-		font-size:17px;
+		font-size:2em;
 		margin-bottom: 0px;
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 	
 	h5 {
 		color:#fff;
-		font-size:17px;
+		font-size:2em;
 		font-weight:bold;
 		text-transform: capitalize;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -160,7 +160,7 @@
 	    font-style: italic;
 		color: #7FA8D4;
 		margin-top: -15px;
-		font-size: 16px;
+		font-size: 2em;
 		font-family: 'Source Sans Pro', sans-serif;
 	}
 	
@@ -240,9 +240,10 @@ hr {
  */
 .page-content {
     padding: $spacing-unit 0;
-	
         background: url(../img/bg.png);
 		background-repeat: no-repeat;
+		background-position: center; 
+		background-size:cover;
 }
 
 .page-heading {
@@ -322,7 +323,9 @@ hr {
 */
 
 .footer-heading {
-text-transform: uppercase;
+	text-transform: uppercase;
+	font-size:1em;
+	font-weight:bold;
 }
 
 .centered-text {

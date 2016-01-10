@@ -3,18 +3,21 @@ layout: default
 ---
 
 <div class="home">
+<script>
+$("#sesh").load(location.href + " #sesh");
 
-<div class="footer-col-wrapper">
+</script>
+<div id="sesh" class="footer-col-wrapper">
 <!--get room one sessions -->
 {% assign counter=0 %}
 	{% for session in site.data.sessions %}
 		{% if session.roomId == 1 %}  
 		
-			<!-- {% capture todays_date %}{{ site.time | date: "%Y-%m-%d" }}{% endcapture %}
-			{% capture current_time %}{{ site.time | date: "%H:%M" }}{% endcapture %} -->
+			 {% capture todays_date %}{{ site.time | date: "%Y-%m-%d" }}{% endcapture %}
+			{% capture current_time %}{{ site.time | date: "%H:%M" }}{% endcapture %} 
 			<!-- Setting below for debug purposes as time changes quicker than I code!! -->
-			{% capture todays_date %}{{ "2016-01-09" }}{% endcapture %}
-			{% capture current_time %}{{ "18:00" }}{% endcapture %}
+			<!--{% capture todays_date %}{{ "2016-01-09" }}{% endcapture %}
+			{% capture current_time %}{{ "18:00" }}{% endcapture %}-->
 			
 			{% capture session_date %}{{session.date | date: "%Y-%m-%d" }}{% endcapture %}
 			{% capture session_time %}{{session.date | date: "%H:%M" }}{% endcapture %}
