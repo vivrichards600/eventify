@@ -14,7 +14,10 @@ layout: default
 			{% for session in site.data.day1.sessions %}		
 				{% if session.roomId == 1 %}
 					<p>
-						<span class="datetime">{{session.datetime | date: "%H:%M"}} -</span>  <span class="title">{{ session.title}}</span> <span class="presentedby">presented by</span> <span class="speaker">{{session.speaker}} </span>
+						{% if session.datetime !=  %}<img src="{{ site.baseurl }}/img/clock.png"/><span class="datetime">{{session.datetime | date: "%H:%M"}} - </span>{% else %}<br><br>{% endif %}
+						 <span class="title">{{ session.title}}</span> 
+						{% if session.speaker !=  %}<br><span class="presentedby">presented by</span>{% endif %}	
+						<span class="speaker">{{session.speaker}} </span>
 					</p>					
 				{% endif %}	
 			{% endfor %}
@@ -29,7 +32,10 @@ layout: default
 			{% for session in site.data.day1.sessions %}		
 				{% if session.roomId == 2 %}
 					<p>
-						<span class="datetime">{{session.datetime | date: "%H:%M"}}</span> - <span class="title">{{ session.title}}</span> <span class="presentedby">presented </span> <span class="speaker">{{session.speaker}} </span>
+						{% if session.datetime !=  %}<img src="{{ site.baseurl }}/img/clock.png"/><span class="datetime">{{session.datetime | date: "%H:%M"}} -</span>{% else %}<br><br>{% endif %}
+						<span class="title">{{ session.title}}</span> 
+						{% if session.speaker !=  %}<br><span class="presentedby">presented by</span>{% endif %}	
+						<span class="speaker">{{session.speaker}} </span>
 					</p>				
 				{% endif %}	
 			{% endfor %}

@@ -1,21 +1,66 @@
 date: 2016-01-10
 sessions:
- - speaker: Sandro Acuso
+ - speaker: Sandro Macuso
    title: Keynote
    roomId: 1
-   datetime: 2016-01-10 18:00
-  
- - speaker: Viv Ricaros
-   title: Understanding Craftsmanship
+   datetime: 2016-01-10 10:00
+   
+ - speaker: 
+   title: 
    roomId: 2
-   datetime: 2016-01-10 18:00
-
- - speaker: Simon Yellow
-   title: What is Agile?
+   datetime: 
+   
+ - speaker: Jason Gorman
+   title: What Is Continous Inspection, Anyway?
    roomId: 1
-   datetime: 2016-01-10 19:00
-
- - speaker: Carlos Hermando
-   title: How to fail fast
+   datetime: 2016-01-10 11:10
+  
+ - speaker: Stuart Arthur
+   title: Exploring alternative to software estimation with #NoEstimates
    roomId: 2
-   datetime: 2016-01-10 19:00
+   datetime: 2016-01-10 11:10
+
+ - speaker: Marcello Duarte
+   title: Understanding Craftsmanship
+   roomId: 1
+   datetime: 2016-01-10 12:00
+
+ - speaker: Trisha Gee
+   title: Level Up Your Tests
+   roomId: 2
+   datetime: 2016-01-10 12:00
+
+ - speaker: Konstantin Kudryashov
+   title: Taking back BDD
+   roomId: 1
+   datetime: 2016-01-10 13:45
+
+ - speaker: Steve Tooke
+   title: Surrender the illusion of control
+   roomId: 2
+   datetime: 2016-01-10 13:45
+
+ - speaker: Samir Talwar
+   title: Use your type system; write less code
+   roomId: 1
+   datetime: 2016-01-10 14:40
+
+ - speaker: Chris Cundill
+   title: Scala in GOV.UK Digital Services
+   roomId: 2
+   datetime: 2016-01-10 14:40
+
+ - speaker: Felienne Hermans
+   title: Spreadsheets are Code
+   roomId: 1
+   datetime: 2016-01-10 15:30
+
+ - speaker: Jiri Knesl
+   title: How to use Theory of Constraints to scale big agile development teams?
+   roomId: 2
+   datetime: 2016-01-10 15:30
+
+ - speaker: 
+   title: Panel Discussion
+   roomId: 1
+   datetime: 2016-01-10 16:30
