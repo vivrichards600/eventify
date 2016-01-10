@@ -2,11 +2,7 @@
  * Site header
  */
  
- 
- .logo img {
-	margin:70px 0px 50px -100px;
- }
- 
+
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
@@ -122,9 +118,17 @@
 	color:#b2ac0a;
 }
 
+h1 {	
+
+color:#fff;
+padding-left:15px;
+font-size:1.7em;
+		text-transform: uppercase;
+
+}
+
 
 .footer-col { width:40%; padding-right:8%;} 
-
 .footer-col {
 	h2 {
 		color:#4991cc;
@@ -132,36 +136,37 @@
 		font-size:2em;
 		font-family: 'Source Sans Pro', sans-serif;
 	}
-
-	h3 {
-		font-size:3em;
-		font-weight:bold;
-		color:#fff;
-		margin-top: -20px;
-		font-family: 'Source Sans Pro', sans-serif;
-	}
-
-	h4 {
-		color:#4991cc;
-		font-size:2em;
-		margin-bottom: 0px;
-		font-family: 'Source Sans Pro', sans-serif;
-	}
 	
-	h5 {
+	
+
+	span.datetime {
 		color:#fff;
-		font-size:2em;
 		font-weight:bold;
-		text-transform: capitalize;
-		font-family: 'Source Sans Pro', sans-serif;
+		padding:0px 5px;
+	}
+	span.title {
+		color:#4991cc;
+		font-weight:bold;
+		font-size:1.2em;
+	}
+	span.presentedby {
+		color:#fff;
+		font-weight:italic;
+		padding:0px 5px;
+	}
+	span.speaker {
+		color:#4991cc;
+		font-weight:italic;
+		font-size:1.2em;
 	}
 	
 	p {
 	    font-style: italic;
 		color: #7FA8D4;
 		margin-top: -15px;
-		font-size: 2em;
+		font-size: 1em;
 		font-family: 'Source Sans Pro', sans-serif;
+		padding:5px 0px;
 	}
 	
 	.col-2 h2 {
@@ -173,13 +178,16 @@
 	.col-2 p	 {
 		color:#293a40;
 	}
+
+	.col-2 span.title, .col-2 span.speaker {
+	color:#293a40;}
 }
 
 
 hr {
 	border: 1px dashed #a2c1e8;
 	margin-top:-15px;
-	margin-bottom:20px;
+	margin-bottom:40px;
 }
 
 .footer-col-wrapper {

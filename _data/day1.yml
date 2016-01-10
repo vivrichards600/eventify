@@ -1,0 +1,21 @@
+date: 2016-01-10
+sessions:
+ - speaker: Sandro Acuso
+   title: Keynote
+   roomId: 1
+   datetime: 2016-01-10 18:00
+  
+ - speaker: Viv Ricaros
+   title: Understanding Craftsmanship
+   roomId: 2
+   datetime: 2016-01-10 18:00
+
+ - speaker: Simon Yellow
+   title: What is Agile?
+   roomId: 1
+   datetime: 2016-01-10 19:00
+
+ - speaker: Carlos Hermando
+   title: How to fail fast
+   roomId: 2
+   datetime: 2016-01-10 19:00
